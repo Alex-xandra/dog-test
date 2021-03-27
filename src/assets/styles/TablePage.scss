@@ -1,0 +1,65 @@
+@import "@/assets/styles/Main";
+
+.table-page {
+  display: none;
+
+  &.active {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    overflow: hidden;
+  }
+
+  .table-cell {
+    overflow: hidden;
+    height: 400px;
+    cursor: pointer;
+    position: relative;
+
+    .table-cell-item {
+      width: 100%;
+      height: 100%;
+
+      .table-cell-photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .photo-overlay {
+      position: absolute;
+      display: none;
+      top: 0;
+      background-color: rgba($mainColor, 0.8);
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+
+      .favourite-icon {
+        width: 50px;
+        margin: 15px 0 0 15px;
+      }
+    }
+
+    .photo-overlay {
+      display: none;
+      top: 0;
+      background-color: rgba($mainColor, 0.8);
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+
+      .favourite-icon {
+        width: 50px;
+        margin: 15px 0 0 15px;
+      }
+    }
+
+    &:hover {
+      .photo-overlay {
+        display: block;
+      }
+    }
+  }
+}

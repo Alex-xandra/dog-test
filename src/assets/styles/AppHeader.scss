@@ -1,0 +1,73 @@
+@import "@/assets/styles/Main";
+
+.main-header {
+  display: flex;
+  margin: 0;
+  padding: 0 15px;
+  align-items: center;
+  background-color: $mainColor;
+  border-bottom: 2px solid $textColor;
+
+  li {
+    list-style-type: none;
+    float: left;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .main-header-logo {
+    width: 30px;
+  }
+
+  .main-header-list {
+    display: flex;
+    height: 30px;
+    overflow: hidden;
+
+    .main-header-list-item {
+      font-size: 1.3rem;
+
+      a {
+        text-decoration: none;
+        color: $textColor;
+      }
+
+      &:hover {
+        color: $textColorHighlight;
+
+        a {
+          color: $textColorHighlight;
+        }
+      }
+
+      &.breed-item {
+        .additional-header {
+          display: none;
+          z-index: 100;
+
+          ul {
+            padding: 0;
+
+            li a {
+              text-decoration: none;
+              color: $textColor;
+            }
+
+            li:hover a {
+              color: $textColorHighlight;
+            }
+          }
+        }
+
+        &:hover {
+          .additional-header {
+            background-color: $mainColor;
+            display: flex;
+            position: absolute;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}

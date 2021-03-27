@@ -1,0 +1,15 @@
+$mainColor: #eeeeee;
+$textColor: #333333;
+$textColorHighlight: #7d7d7d;
+
+@mixin page {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+}
+
+@mixin page-header {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}

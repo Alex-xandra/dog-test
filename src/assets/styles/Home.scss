@@ -1,0 +1,9 @@
+@import "@/assets/styles/Main";
+
+.home {
+  @include page;
+
+  .home-header {
+    @include page-header;
+  }
+}

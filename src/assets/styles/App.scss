@@ -1,0 +1,24 @@
+@import "@/assets/styles/Main";
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: relative;
+}
+
+body.fixed {
+  position: fixed;
+  overflow: hidden;
+}
+
+#app {
+  position: relative;
+  font-family: karla, monospace;
+  color: $textColor;
+  font-size: 14px;
+}

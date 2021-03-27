@@ -1,0 +1,9 @@
+@import "@/assets/styles/Main";
+
+.favourites-page {
+  @include page;
+
+  .favourites-page-header {
+    @include page-header;
+  }
+}

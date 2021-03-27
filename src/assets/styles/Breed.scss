@@ -1,0 +1,9 @@
+@import "@/assets/styles/Main";
+
+.breed {
+  @include page;
+
+  .breed-header {
+    @include page-header;
+  }
+}
